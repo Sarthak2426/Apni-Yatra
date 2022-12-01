@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/register.css">
+  </head>
+  <body>
+    {{>header}}
+    <div class="login">
+      <div class="welimage"><img src="img/welcome.png" alt="" /></div>
+      <div class="loginform">
+        <div class="logintitle"> SIGN UP </div>
+        <div class="logindetail">
+          <form  action="/register" method="POST">
+            <div class="txt_field">
+              <input type="String" placeholder= "Email" name="Email" required />
+              {{!-- <label>Enter email</label> --}}
+            </div>
+            <div class="txt_field">
+              <input type="String" placeholder = "Username" name="Username" required />
+              {{!-- <label>Create User Name</label> --}}
+            </div>
+            <div class="txt_field">
+              <input type="Number" placeholder="Phone" name="Phone"  required />
+              {{!-- <label>Contact Number</label> --}}
+            </div>
+            <div class="txt_field">
+              <input type="String" placeholder="Password" name="Password" required />
+              {{!-- <label>Password</label> --}}
+            </div>
+            <div class="txt_field">
+              <input type="String" placeholder="ConfirmPassword" name="ConfirmPassword" required />
+              {{!-- <label>Confirm Password</label> --}}
+            </div>
+            <input type="submit" value="Register" />
+
+            <div class="signup_link">
+              If you have an account. You can
+              <a href="./login">Sign In</a>
+              here.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <img src="img/footer1.png" class="footerimage" />
+    {{>footer}}
+  </body>
+</html>

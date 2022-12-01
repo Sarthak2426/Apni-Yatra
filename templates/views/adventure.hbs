@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Adventure</title>
+       <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/adventure.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/adventure.js"></script>
+</head>
+
+<body>
+ {{>header}}
+        <video autoplay muted loop>
+            <source src="img/With Aad.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="map"></div>
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8E7infB0C0acwoae0bkUrJN0e8zLWqFo&callback=initMap&v=weekly">function initMap() {
+                    const uluru = { lat: 17.387, lng: 78.491 };
+                    const map = new google.maps.Map(document.getElementById("map"), {
+                        zoom: 4,
+                        center: uluru,
+                    });
+                    const marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map,
+                    });
+                }</script>
+        <section id="adventure">
+            <div class="destination">
+                <p>TOP ADVENTURE DESTINATION IN INDIA</p>
+                <span>You will get the best package with full enjoy!!!!</span>
+                {{!-- <div class="Agrid" id="Agrid">
+                    <script src="../adventure/adventure.js"></script>
+                </div> --}}
+                 <div class="Agrid">
+                <div class="adventureplace">
+                    <img src="img/AP.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Arunachal Pradesh</p>
+                        <button>10 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/meghalaya.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Meghalaya</p><button>5 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/sikkim.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Sikkim</p><button>9 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/goaa.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Goa</p><button>11 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/andaman.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Andaman Island</p><button>3 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/keralaa.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Kerala</p><button>4 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/dandeli.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Dandeli</p><button>6 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/auali.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Auli</p><button>3 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/gulmarg.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Gulmarg</p><button>1 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/manali.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Manali</p><button>20 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/ladhak.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Ladhak</p><button>14 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/rishi.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Rishikesh</p><button>12 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/rajasthan.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Rajasthan</p><button>6 tours</button>
+                    </div>
+                </div>
+                <div class="adventureplace">
+                    <img src="img/bir.jpg" alt="" width="480" height="345">
+                    <div class="Atext">
+                        <p>Bir-Billing</p><button>4 tours</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <div class="what">
+            <span>What do we do?</span>
+            <p>Adventure.Travel is the go-to source for information on adventure travel that prioritizes sustainability,
+                serves as a force for good, and transforms people and places. From research and trends to best travel
+                practices, ideal gear, and destinations and operators with outstanding commitments to responsible
+                travel, we have everything you need to make sure your adventures align with your values.</p>
+            <p>
+                Life-changing travel must also be sustainable travel. By bringing together a growing community of people
+                committed to traveling thoughtfully and considerately, we help shape the adventure and eco-tourism
+                industry as it grows. In response to travelers’ desires, tour operators, destinations and travel
+                advisors are increasingly working to ensure their experiences provide an unforgettable journey in a
+                responsible, sustainable way. Such commitment in turn honors the people, environment and economies of
+                incredible destinations around the world.
+            </p>
+            <p>Through compelling images and well-crafted stories, research and curated news of interest,
+                Adventure.Travel inspires the curious to try new destinations, branch out in their activities, interact
+                deeply with nature, and experience different cultures in the most respectful way possible.</p>
+        </div>
+         {{>footer}}
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background: rgba(42, 43, 43, 0.158);
+  height: 15em;
+}
+.logodetail {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin-top: 2em;
+  margin-left: 7em;
+  font-size: 15px;
+  width: 15em;
+}
+.logodetail img {
+  width: 5em;
+  height: 5rem;
+}
+.copyright {
+  margin-top: 2em;
+}
+.footerdetail {
+  position: relative;
+  margin-top: 2.5em;
+  font-size: 19px;
+  font-weight: bold;
+}
+.footerdetail ul {
+  margin-top: 1em;
+  font-size: 17px;
+  font-weight: normal;
+}
+.footerdetail ul li a {
+  color: rgba(0, 0, 0, 0.636);
+}

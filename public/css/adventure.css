@@ -1,0 +1,72 @@
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(174 208 187);
+}
+.destination p {
+  text-align: center;
+  font-weight: bolder;
+  color: #173559;
+  padding: 6px;
+  font-size: 18px;
+}
+.destination span {
+  text-align: center;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.77);
+  padding: 5px;
+}
+.Agrid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 12px;
+  margin-left: 6em;
+}
+.Atext {
+  align-items: center;
+  text-align: center;
+}
+.Atext p {
+  text-align: center;
+  align-items: center;
+}
+.Atext button {
+  border: none;
+  background-color: rgb(237, 248, 245);
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 12px;
+  width: 7vw;
+}
+.what {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(174 208 187);
+}
+.what span {
+  text-align: center;
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 18px;
+}
+.what p {
+  display: flex;
+  flex-direction: column;
+  font-weight: medium;
+  font-size: 18px;
+  padding: 12px;
+  text-align: center;
+  color: #173559;
+}

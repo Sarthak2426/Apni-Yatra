@@ -1,0 +1,63 @@
+/* <----------------------------------------- Why we Section------------------------------------------> */
+.whatweoffer {
+    background-color: #c5ebd4;
+    display: flex;
+    margin-top: 1em;
+    justify-content: center;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #172659;
+    box-shadow: -3px 2px 4px rgba(57, 56, 56, 0.981);
+    text-shadow: 1px 1px rgb(90, 88, 91);
+  }
+  .features {
+    display: grid;
+    padding: 18px;
+    background-color: #c5ebd4;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .featureText1 {
+    font-size: 20px;
+    padding: 12px;
+  }
+  .featureText {
+    font-size: 18px;
+    padding: 12px;
+    color: #164f40;
+  }
+  /* <----------------------------------------- About Section------------------------------------------> */
+  .aboutus {
+    background-color: rgb(174 208 187);
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #172659;
+    box-shadow: 3px 2px 4px rgba(57, 56, 56, 0.981);
+    text-shadow: 1px 1px rgb(90, 88, 91);
+  }
+  .detail {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #c5ebd4;
+  }
+  .detail img {
+    padding: 12px;
+  }
+  .aboutText1 {
+    position: relative;
+    top: 2em;
+    font-size: 19px;
+    padding: 12px;
+  }
+  .aboutText2 {
+    position: relative;
+    top: 10em;
+    font-size: 19px;
+    padding: 12px;
+  }
+  

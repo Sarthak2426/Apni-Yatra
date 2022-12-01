@@ -1,0 +1,54 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    {{>header}}
+    <div class="login">
+      <div class="image1"><img src="img/welcome.png" alt="" /></div>
+      <div class="loginform">
+        <div class="logintitle"> SIGN IN </div>
+        <div class="logindetail">
+          <form method="POST" action="/login">
+            <div class="txt_field">
+              <input type="String" placeholder="Email" name="Email" required />
+              {{! <label>Enter email</label> }}
+            </div>
+            <div class="txt_field">
+              <input type="String" placeholder="Password" name="Password" required />
+              {{! <label>Create User Name</label> }}
+            </div>
+            <div class="fpass">Forgot Password?</div>
+            <input type="submit" value="Login" />
+
+            <div class="signup_link">
+              If you don’t have an account register. You can
+              <a href="./register">Register</a>
+              here.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <img src="img/footer1.png" class="footerimage" />
+  {{>footer}}
+  </body>
+
+</html>
